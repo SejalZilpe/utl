@@ -1,9 +1,13 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<pthread.h>
+int mat1[3][3],mat2[3][3],mat3[3][3],i,j,k;
+void *thread_mat_mul(void *);
+
 int main()
 {
-	int mat1[3][3],mat2[3][3],mat3[3][3],i,j,k;	
+	//int mat1[3][3],mat2[3][3],mat3[3][3],i,j,k;	
+	pthread_t tid;
 	printf("\n enter 1st array : ");
 	for(i=0;i<3;i++)
 	{
@@ -28,6 +32,7 @@ int main()
         	}
         }
 	printf("\n multiplying the matrix : ");
+	pthread_create(&tid,NULL,thread_mat_mul,NULL);
 	for(i=0;i<3;i++)
 	{
 		for(j=0;j<3;j++)
@@ -67,5 +72,23 @@ int main()
         }
 
 return 0;
+}
+
+
+void *thread_mat_mul(void *para)
+{
+	int i,j,k;
+        for(i=0;i<3;i++)
+        {
+                for(j=0;j<3;j++)
+                {
+                        for(k=0;k<3;k++)
+                        {
+                                mat3[i][j]=mat3[i][j]+(mat2[i][k]*mat1[k][j]);
+                        }
+                }
+        }
+	printf("\n thread finish ");
+	pthread_exit(0);
 }
 

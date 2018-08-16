@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~Msle0~/\<include\>
+~Msle0~/\<thread_mat_mul\>
 
 # Last Substitute String:
 $
@@ -26,6 +26,7 @@ $
 :q!
 
 # Search String History (newest to oldest):
+? \<thread_mat_mul\>
 ? \<include\>
 ? \<switch\>
 ?/switch
@@ -69,23 +70,27 @@ $
 	,
 
 # File marks:
-'0  71  0  ~/mat_mul.c
-'1  8  17  ~/mat_mul.c
-'2  46  28  ~/mat_mul.c
-'3  59  33  ~/mat_mul.c
-'4  1  0  ~/pthread/sema.c
-'5  38  17  ~/sema.c
-'6  1  0  ~/sema.c
-'7  49  0  ~/sema.c
-'8  19  14  ~/count.c
-'9  7  21  ~/count.c
+'0  4  42  ~/mat_mul.c
+'1  78  25  ~/mat_mul.c
+'2  94  0  ~/mat_mul.c
+'3  76  0  ~/mat_mul.c
+'4  12  17  ~/mat_mul.c
+'5  51  28  ~/mat_mul.c
+'6  64  33  ~/mat_mul.c
+'7  1  0  ~/pthread/sema.c
+'8  38  17  ~/sema.c
+'9  1  0  ~/sema.c
 
 # Jumplist (newest first):
--'  71  0  ~/mat_mul.c
+-'  4  42  ~/mat_mul.c
 -'  1  0  ~/mat_mul.c
--'  8  17  ~/mat_mul.c
--'  46  28  ~/mat_mul.c
--'  59  33  ~/mat_mul.c
+-'  78  25  ~/mat_mul.c
+-'  94  0  ~/mat_mul.c
+-'  5  5  ~/mat_mul.c
+-'  76  0  ~/mat_mul.c
+-'  12  17  ~/mat_mul.c
+-'  51  28  ~/mat_mul.c
+-'  64  33  ~/mat_mul.c
 -'  1  0  ~/pthread/sema.c
 -'  38  17  ~/sema.c
 -'  1  0  ~/sema.c
@@ -175,90 +180,102 @@ $
 -'  1  0  ~/Downloads/tlpi-dist/svmsg/svmsg_create.c
 -'  36  0  ~/Downloads/tlpi-dist/acl/acl_update.c
 -'  1  0  ~/Downloads/tlpi-dist/acl/acl_update.c
--'  87  8  ~/Downloads/tlpi-dist/svmsg/svmsg_create.c
--'  67  26  ~/Downloads/tlpi-dist/svmsg/svmsg_create.c
--'  48  0  ~/Downloads/tlpi-dist/svmsg/svmsg_create.c
--'  27  4  ~/Downloads/tlpi-dist/daemons/become_daemon.c
 
 # History of marks within files (newest to oldest):
 
 > ~/mat_mul.c
-	"	71	0
-	^	71	0
-	.	60	17
+	"	4	42
+	^	4	43
+	.	4	42
 	+	2	18
-	+	7	29
-	+	6	18
-	+	13	1
+	+	10	29
+	+	9	18
+	+	17	1
+	+	18	1
+	+	10	20
+	+	9	7
+	+	10	7
+	+	9	25
+	+	26	9
+	+	24	30
+	+	16	16
+	+	20	0
+	+	9	42
+	+	9	36
+	+	33	9
+	+	31	27
+	+	42	1
+	+	33	9
+	+	42	49
+	+	72	9
+	+	69	34
+	+	71	13
+	+	75	0
+	+	9	43
 	+	14	1
-	+	7	20
-	+	6	7
-	+	7	7
-	+	6	25
-	+	22	9
-	+	20	30
-	+	12	16
-	+	16	0
-	+	6	42
-	+	6	36
-	+	29	9
-	+	27	27
-	+	37	1
-	+	29	9
-	+	37	49
-	+	67	9
-	+	64	34
-	+	66	13
-	+	70	0
-	+	6	43
-	+	10	1
-	+	11	1
-	+	12	2
-	+	13	1
-	+	17	8
-	+	18	8
-	+	19	8
-	+	20	16
+	+	15	1
+	+	16	2
+	+	17	1
 	+	21	8
-	+	22	9
-	+	17	8
+	+	22	8
+	+	23	8
+	+	24	16
 	+	25	8
-	+	26	8
-	+	27	16
-	+	28	8
-	+	30	0
-	+	32	0
-	+	33	18
-	+	34	1
-	+	35	2
-	+	36	2
-	+	37	4
-	+	38	2
-	+	39	5
-	+	40	0
-	+	62	8
-	+	63	8
-	+	64	16
-	+	65	8
-	+	66	1
+	+	26	9
+	+	21	8
+	+	29	8
+	+	30	8
+	+	31	16
+	+	32	8
+	+	34	0
+	+	37	0
+	+	38	18
+	+	39	1
+	+	40	2
+	+	41	2
+	+	42	4
+	+	43	2
+	+	44	5
+	+	45	0
 	+	67	8
-	+	58	9
-	+	46	43
-	+	55	42
-	+	41	34
-	+	50	35
-	+	59	33
-	+	12	14
-	+	20	28
-	+	46	29
-	+	55	29
-	+	64	22
-	+	8	17
-	+	16	17
-	+	23	17
-	+	42	17
-	+	51	17
-	+	60	17
+	+	68	8
+	+	69	16
+	+	70	8
+	+	71	1
+	+	72	8
+	+	63	9
+	+	51	43
+	+	60	42
+	+	46	34
+	+	55	35
+	+	64	33
+	+	16	14
+	+	24	28
+	+	51	29
+	+	60	29
+	+	69	22
+	+	12	17
+	+	20	17
+	+	27	17
+	+	47	17
+	+	56	17
+	+	65	17
+	+	35	15
+	+	10	1
+	+	11	0
+	+	10	14
+	+	35	46
+	+	90	9
+	+	78	26
+	+	80	10
+	+	93	0
+	+	78	19
+	+	5	5
+	+	35	39
+	+	78	25
+	+	4	36
+	+	9	2
+	+	4	42
 
 > ~/pthread/sema.c
 	"	1	0
