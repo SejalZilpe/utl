@@ -69,18 +69,23 @@ $
 	,
 
 # File marks:
-'0  1  0  ~/pthread/sema.c
-'1  38  17  ~/sema.c
-'2  1  0  ~/sema.c
-'3  49  0  ~/sema.c
-'4  19  14  ~/count.c
-'5  7  21  ~/count.c
-'6  15  0  ~/count.c
-'7  1  12  ~/count.c
-'8  41  0  ~/count.c
-'9  37  9  ~/count.c
+'0  71  0  ~/mat_mul.c
+'1  8  17  ~/mat_mul.c
+'2  46  28  ~/mat_mul.c
+'3  59  33  ~/mat_mul.c
+'4  1  0  ~/pthread/sema.c
+'5  38  17  ~/sema.c
+'6  1  0  ~/sema.c
+'7  49  0  ~/sema.c
+'8  19  14  ~/count.c
+'9  7  21  ~/count.c
 
 # Jumplist (newest first):
+-'  71  0  ~/mat_mul.c
+-'  1  0  ~/mat_mul.c
+-'  8  17  ~/mat_mul.c
+-'  46  28  ~/mat_mul.c
+-'  59  33  ~/mat_mul.c
 -'  1  0  ~/pthread/sema.c
 -'  38  17  ~/sema.c
 -'  1  0  ~/sema.c
@@ -174,13 +179,86 @@ $
 -'  67  26  ~/Downloads/tlpi-dist/svmsg/svmsg_create.c
 -'  48  0  ~/Downloads/tlpi-dist/svmsg/svmsg_create.c
 -'  27  4  ~/Downloads/tlpi-dist/daemons/become_daemon.c
--'  1  0  ~/Downloads/tlpi-dist/daemons/become_daemon.c
--'  13  0  ~/Downloads/tlpi-dist/pmsg/pmsg_getattr.c
--'  1  0  ~/Downloads/tlpi-dist/pmsg/pmsg_getattr.c
--'  26  11  ~/linux_workshp_july/day3/IPCs/activity.c
--'  1  0  ~/linux_workshp_july/day3/IPCs/activity.c
 
 # History of marks within files (newest to oldest):
+
+> ~/mat_mul.c
+	"	71	0
+	^	71	0
+	.	60	17
+	+	2	18
+	+	7	29
+	+	6	18
+	+	13	1
+	+	14	1
+	+	7	20
+	+	6	7
+	+	7	7
+	+	6	25
+	+	22	9
+	+	20	30
+	+	12	16
+	+	16	0
+	+	6	42
+	+	6	36
+	+	29	9
+	+	27	27
+	+	37	1
+	+	29	9
+	+	37	49
+	+	67	9
+	+	64	34
+	+	66	13
+	+	70	0
+	+	6	43
+	+	10	1
+	+	11	1
+	+	12	2
+	+	13	1
+	+	17	8
+	+	18	8
+	+	19	8
+	+	20	16
+	+	21	8
+	+	22	9
+	+	17	8
+	+	25	8
+	+	26	8
+	+	27	16
+	+	28	8
+	+	30	0
+	+	32	0
+	+	33	18
+	+	34	1
+	+	35	2
+	+	36	2
+	+	37	4
+	+	38	2
+	+	39	5
+	+	40	0
+	+	62	8
+	+	63	8
+	+	64	16
+	+	65	8
+	+	66	1
+	+	67	8
+	+	58	9
+	+	46	43
+	+	55	42
+	+	41	34
+	+	50	35
+	+	59	33
+	+	12	14
+	+	20	28
+	+	46	29
+	+	55	29
+	+	64	22
+	+	8	17
+	+	16	17
+	+	23	17
+	+	42	17
+	+	51	17
+	+	60	17
 
 > ~/pthread/sema.c
 	"	1	0
