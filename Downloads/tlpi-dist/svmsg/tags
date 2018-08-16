@@ -1,0 +1,49 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+EXE	Makefile	/^EXE = ${GEN_EXE} ${LINUX_EXE}$/;"	m
+GEN_EXE	Makefile	/^GEN_EXE = svmsg_chqbytes svmsg_file_client svmsg_file_server \\$/;"	m
+LINUX_EXE	Makefile	/^LINUX_EXE = svmsg_info svmsg_ls $/;"	m
+MAX_MTEXT	svmsg_receive.c	27;"	d	file:
+MAX_MTEXT	svmsg_send.c	26;"	d	file:
+REQ_MSG_SIZE	svmsg_file.h	39;"	d
+RESP_MSG_SIZE	svmsg_file.h	42;"	d
+RESP_MT_DATA	svmsg_file.h	52;"	d
+RESP_MT_END	svmsg_file.h	53;"	d
+RESP_MT_FAILURE	svmsg_file.h	51;"	d
+SERVER_KEY	svmsg_file.h	27;"	d
+_GNU_SOURCE	svmsg_info.c	20;"	d	file:
+_GNU_SOURCE	svmsg_ls.c	19;"	d	file:
+_GNU_SOURCE	svmsg_receive.c	22;"	d	file:
+clientId	svmsg_file.h	/^    int  clientId;                      \/* ID of client's message queue *\/$/;"	m	struct:requestMsg
+clientId	svmsg_file_client.c	/^static int clientId;$/;"	v	file:
+data	svmsg_file.h	/^    char data[RESP_MSG_SIZE];           \/* File content \/ response message *\/$/;"	m	struct:responseMsg
+grimReaper	svmsg_file_server.c	/^grimReaper(int sig)$/;"	f	file:
+main	svmsg_chqbytes.c	/^main(int argc, char *argv[])$/;"	f
+main	svmsg_create.c	/^main(int argc, char *argv[])$/;"	f
+main	svmsg_file_client.c	/^main(int argc, char *argv[])$/;"	f
+main	svmsg_file_server.c	/^main(int argc, char *argv[])$/;"	f
+main	svmsg_info.c	/^main(int argc, char *argv[])$/;"	f
+main	svmsg_ls.c	/^main(int argc, char *argv[])$/;"	f
+main	svmsg_receive.c	/^main(int argc, char *argv[])$/;"	f
+main	svmsg_rm.c	/^main(int argc, char *argv[])$/;"	f
+main	svmsg_send.c	/^main(int argc, char *argv[])$/;"	f
+mbuf	svmsg_receive.c	/^struct mbuf {$/;"	s	file:
+mbuf	svmsg_send.c	/^struct mbuf {$/;"	s	file:
+mtext	svmsg_receive.c	/^    char mtext[MAX_MTEXT];      \/* Message body *\/$/;"	m	struct:mbuf	file:
+mtext	svmsg_send.c	/^    char mtext[MAX_MTEXT];              \/* Message body *\/$/;"	m	struct:mbuf	file:
+mtype	svmsg_file.h	/^    long mtype;                         \/* One of RESP_MT_* values below *\/$/;"	m	struct:responseMsg
+mtype	svmsg_file.h	/^    long mtype;                         \/* Unused *\/$/;"	m	struct:requestMsg
+mtype	svmsg_receive.c	/^    long mtype;                 \/* Message type *\/$/;"	m	struct:mbuf	file:
+mtype	svmsg_send.c	/^    long mtype;                         \/* Message type *\/$/;"	m	struct:mbuf	file:
+pathname	svmsg_file.h	/^    char pathname[PATH_MAX];            \/* File to be returned *\/$/;"	m	struct:requestMsg
+removeQueue	svmsg_file_client.c	/^removeQueue(void)$/;"	f	file:
+requestMsg	svmsg_file.h	/^struct requestMsg {                     \/* Requests (client to server) *\/$/;"	s
+responseMsg	svmsg_file.h	/^struct responseMsg {                    \/* Responses (server to client) *\/$/;"	s
+serveRequest	svmsg_file_server.c	/^serveRequest(const struct requestMsg *req)$/;"	f	file:
+usageError	svmsg_create.c	/^usageError(const char *progName, const char *msg)$/;"	f	file:
+usageError	svmsg_receive.c	/^usageError(const char *progName, const char *msg)$/;"	f	file:
+usageError	svmsg_send.c	/^usageError(const char *progName, const char *msg)$/;"	f	file:

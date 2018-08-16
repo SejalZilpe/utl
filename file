@@ -1,0 +1,24 @@
+Script started on Tue 07 Aug 2018 05:08:16 PM IST
+]0;utl@ubuntu: ~[01;32mutl@ubuntu[00m:[01;34m~[00m$ ./example
+
+ conditio is true 
+ 
+ end of program 
+ ]0;utl@ubuntu: ~[01;32mutl@ubuntu[00m:[01;34m~[00m$ ls
+[0m[01;32ma.out[0m         [01;32mexample[0m           file                [01;34mos[0m           [01;34mProject_vbs[0m
+[01;34mCPP_Workshop[0m  example.c         firstpgm.c          [01;34mOS_Concepts[0m  [01;34mPublic[0m
+[01;34mDesktop[0m       example.gcda      hello.c             pgm1.c       [01;34mTemplates[0m
+[01;34mDocuments[0m     example.gcno      [01;34mlinux_workshp_july[0m  [01;34mPictures[0m     [01;34mVideos[0m
+[01;34mDownloads[0m     examples.desktop  [01;34mMusic[0m               [01;34mProject[0m
+]0;utl@ubuntu: ~[01;32mutl@ubuntu[00m:[01;34m~[00m$ gcov -b -cec[Kxample.c example.c[C[C[C[C[C[C[C[C[C
+File 'example.c'
+Lines executed:75.00% of 8
+Branches executed:100.00% of 2
+Taken at least once:50.00% of 2
+Calls executed:66.67% of 3
+Creating 'example.c.gcov'
+
+]0;utl@ubuntu: ~[01;32mutl@ubuntu[00m:[01;34m~[00m$ exit
+exit
+
+Script done on Tue 07 Aug 2018 05:09:56 PM IST

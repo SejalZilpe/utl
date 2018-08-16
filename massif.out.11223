@@ -1,0 +1,87 @@
+desc: (none)
+cmd: ./example
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=107152
+mem_heap_B=1024
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=117186
+mem_heap_B=1048
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=122452
+mem_heap_B=1600
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=143925
+mem_heap_B=1600
+mem_heap_extra_B=40
+mem_stacks_B=0
+heap_tree=peak
+n3: 1600 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1024 0x4E9E1D3: _IO_file_doallocate (filedoalloc.c:127)
+  n1: 1024 0x4EAC592: _IO_doallocbuf (genops.c:398)
+   n1: 1024 0x4EAB8F6: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:820)
+    n1: 1024 0x4EAA28B: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1331)
+     n1: 1024 0x4E7E23F: vfprintf (vfprintf.c:1320)
+      n1: 1024 0x4E86897: printf (printf.c:33)
+       n0: 1024 0x400D3A: main (in /home/utl/example)
+ n1: 552 0x4E9E5D7: fdopen@@GLIBC_2.2.5 (iofdopen.c:139)
+  n1: 552 0x4011AB: __gcov_open (in /home/utl/example)
+   n1: 552 0x401D7C: gcov_do_dump (in /home/utl/example)
+    n1: 552 0x402CE0: gcov_exit (in /home/utl/example)
+     n1: 552 0x4E6AFF6: __run_exit_handlers (exit.c:82)
+      n1: 552 0x4E6B043: exit (exit.c:104)
+       n0: 552 0x4E51835: (below main) (libc-start.c:325)
+ n1: 24 0x402A7D: gcov_do_dump (in /home/utl/example)
+  n1: 24 0x402CE0: gcov_exit (in /home/utl/example)
+   n1: 24 0x4E6AFF6: __run_exit_handlers (exit.c:82)
+    n1: 24 0x4E6B043: exit (exit.c:104)
+     n0: 24 0x4E51835: (below main) (libc-start.c:325)
+#-----------
+snapshot=5
+#-----------
+time=143925
+mem_heap_B=1048
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=144985
+mem_heap_B=1024
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=147712
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty

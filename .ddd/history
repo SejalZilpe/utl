@@ -1,0 +1,12 @@
+file /home/utl/a.out
+file /home/utl/example
+file /home/utl/example
+file /home/utl/a.out
+r
+file /home/utl/example
+start
+n
+r
+file /home/utl/example
+quit
+
