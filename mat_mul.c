@@ -1,43 +1,43 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<pthread.h>
-int mat1[3][3],mat2[3][3],mat3[3][3],i,j,k;
+int mat1[10][10],mat2[10][10],mat3[10][10],i,j,k;
 void *thread_mat_mul(void *);
 
 int main()
 {
-	//int mat1[3][3],mat2[3][3],mat3[3][3],i,j,k;	
+//	int num;
 	pthread_t tid;
 	printf("\n enter 1st array : ");
-	for(i=0;i<3;i++)
+	for(i=0;i<10;i++)
 	{
-		for(j=0;j<3;j++)
+		for(j=0;j<10;j++)
 		{
 			scanf("%d",&mat1[i][j]);
 		}
 	}
 	printf("\n enter 2nd array : ");
-	for(i=0;i<3;i++)
+	for(i=0;i<10;i++)
         {
-        	for(j=0;j<3;j++)
+        	for(j=0;j<10;j++)
         	{
                 	scanf("%d",&mat2[i][j]);
         	}
         }
-	for(i=0;i<3;i++)
+	for(i=0;i<10;i++)
         {
-        	for(j=0;j<3;j++)
+        	for(j=0;j<10;j++)
         	{
                 	mat3[i][j]=0;
         	}
         }
 	printf("\n multiplying the matrix : ");
 	pthread_create(&tid,NULL,thread_mat_mul,NULL);
-	for(i=0;i<3;i++)
+	for(i=0;i<10;i++)
 	{
-		for(j=0;j<3;j++)
+		for(j=0;j<10;j++)
 		{
-			for(k=0;k<3;k++)
+			for(k=0;k<10;k++)
 			{
 	 			mat3[i][j]=mat3[i][j]+(mat2[i][k]*mat1[k][j]);	
 			}
@@ -61,6 +61,8 @@ int main()
                 }
                 printf("\n");
         }
+	printf("\n enter num : ");
+	scanf("%d",&num);
 	printf("\n the output is : \n ");
 	for(i=0;i<3;i++)
         {
@@ -70,7 +72,6 @@ int main()
         	}
 		printf("\n");
         }
-
 return 0;
 }
 

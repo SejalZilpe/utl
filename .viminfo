@@ -15,9 +15,9 @@ $
 
 # Command Line History (newest to oldest):
 :wq
+:WQ
 :wwq
 :wqi
-:WQ
 :!wq
 :set nu
 :q
@@ -70,27 +70,39 @@ $
 	,
 
 # File marks:
-'0  4  42  ~/mat_mul.c
-'1  78  25  ~/mat_mul.c
-'2  94  0  ~/mat_mul.c
-'3  76  0  ~/mat_mul.c
-'4  12  17  ~/mat_mul.c
-'5  51  28  ~/mat_mul.c
-'6  64  33  ~/mat_mul.c
-'7  1  0  ~/pthread/sema.c
-'8  38  17  ~/sema.c
-'9  1  0  ~/sema.c
+'0  113  53  ~/mat_mul_thread.c
+'1  1  0  ~/sum_on_many_thread.c
+'2  47  10  ~/mat_mul.c
+'3  65  9  ~/mat_mul.c
+'4  9  2  ~/mat_mul.c
+'5  71  8  ~/ipc.c
+'6  41  0  ~/mat_mul.c
+'7  46  0  ~/mat_mul.c
+'8  8  0  ~/mat_mul.c
+'9  10  0  ~/mat_mul.c
 
 # Jumplist (newest first):
--'  4  42  ~/mat_mul.c
+-'  113  53  ~/mat_mul_thread.c
+-'  1  0  ~/mat_mul_thread.c
+-'  1  0  ~/sum_on_many_thread.c
+-'  47  10  ~/mat_mul.c
 -'  1  0  ~/mat_mul.c
--'  78  25  ~/mat_mul.c
--'  94  0  ~/mat_mul.c
+-'  65  9  ~/mat_mul.c
+-'  9  2  ~/mat_mul.c
+-'  71  8  ~/ipc.c
+-'  1  0  ~/ipc.c
+-'  41  0  ~/mat_mul.c
+-'  46  0  ~/mat_mul.c
+-'  8  0  ~/mat_mul.c
+-'  10  0  ~/mat_mul.c
+-'  4  42  ~/mat_mul.c
+-'  79  25  ~/mat_mul.c
+-'  95  0  ~/mat_mul.c
 -'  5  5  ~/mat_mul.c
--'  76  0  ~/mat_mul.c
+-'  77  0  ~/mat_mul.c
 -'  12  17  ~/mat_mul.c
 -'  51  28  ~/mat_mul.c
--'  64  33  ~/mat_mul.c
+-'  66  33  ~/mat_mul.c
 -'  1  0  ~/pthread/sema.c
 -'  38  17  ~/sema.c
 -'  1  0  ~/sema.c
@@ -120,7 +132,6 @@ $
 -'  23  10  ~/sum_malloc.c
 -'  1  0  ~/sum_malloc.c
 -'  49  0  ~/sum_on_many_thread.c
--'  1  0  ~/sum_on_many_thread.c
 -'  17  7  ~/sum_on_many_thread.c
 -'  48  0  ~/sum_on_many_thread.c
 -'  47  42  ~/sum_on_many_thread.c
@@ -170,48 +181,111 @@ $
 -'  1  0  ~/linux_workshp_july/day4/Makefile
 -'  3  8  ~/linux_workshp_july/day4/Makefile
 -'  15  1  ~/linux_workshp_july/day4/Makefile
--'  2  18  ~/linux_workshp_july/day4/main.c
--'  1  0  ~/linux_workshp_july/day4/main.c
--'  53  8  ~/Downloads/tlpi-dist/svmsg/svmsg_create.c
--'  39  0  ~/Downloads/tlpi-dist/svmsg/svmsg_create.c
--'  52  18  ~/Downloads/tlpi-dist/svmsg/svmsg_create.c
--'  82  12  ~/Downloads/tlpi-dist/svmsg/svmsg_create.c
--'  24  0  ~/Downloads/tlpi-dist/svmsg/svmsg_create.c
--'  1  0  ~/Downloads/tlpi-dist/svmsg/svmsg_create.c
--'  36  0  ~/Downloads/tlpi-dist/acl/acl_update.c
--'  1  0  ~/Downloads/tlpi-dist/acl/acl_update.c
 
 # History of marks within files (newest to oldest):
 
+> ~/mat_mul_thread.c
+	"	113	53
+	^	113	54
+	.	113	53
+	+	113	53
+
+> ~/sum_on_many_thread.c
+	"	1	0
+	^	49	0
+	.	17	7
+	+	16	9
+	+	18	0
+	+	16	2
+	+	18	2
+	+	43	58
+	+	32	20
+	+	42	56
+	+	42	57
+	+	43	1
+	+	47	0
+	+	47	0
+	+	43	2
+	+	44	0
+	+	42	14
+	+	42	79
+	+	32	21
+	+	35	32
+	+	36	26
+	+	38	0
+	+	40	1
+	+	41	1
+	+	42	0
+	+	46	2
+	+	46	1
+	+	47	0
+	+	47	34
+	+	48	0
+	+	35	22
+	+	42	21
+	+	44	8
+	+	46	22
+	+	1	0
+	+	35	30
+	+	5	1
+	+	14	16
+	+	21	17
+	+	9	0
+	+	13	29
+	+	13	92
+	+	13	64
+	+	15	33
+	+	20	23
+	+	34	30
+	+	35	5
+	+	42	49
+	+	47	29
+	+	34	39
+	+	42	52
+	+	47	42
+	+	9	1
+	+	13	73
+	+	21	14
+	+	26	6
+	+	35	2
+	+	37	5
+	+	47	44
+	+	14	0
+	+	15	42
+	+	32	21
+	+	35	1
+	+	37	22
+	+	38	2
+	+	39	32
+	+	44	22
+	+	47	1
+	+	48	2
+	+	49	0
+	+	14	12
+	+	15	5
+	+	17	7
+
 > ~/mat_mul.c
-	"	4	42
-	^	4	43
-	.	4	42
-	+	2	18
-	+	10	29
-	+	9	18
-	+	17	1
-	+	18	1
-	+	10	20
-	+	9	7
-	+	10	7
-	+	9	25
+	"	47	10
+	^	47	11
+	.	40	14
+	+	10	25
 	+	26	9
 	+	24	30
 	+	16	16
 	+	20	0
-	+	9	42
-	+	9	36
+	+	10	42
+	+	10	36
 	+	33	9
 	+	31	27
 	+	42	1
 	+	33	9
 	+	42	49
-	+	72	9
-	+	69	34
-	+	71	13
-	+	75	0
-	+	9	43
+	+	74	9
+	+	71	34
+	+	73	13
+	+	76	0
+	+	10	43
 	+	14	1
 	+	15	1
 	+	16	2
@@ -237,45 +311,73 @@ $
 	+	43	2
 	+	44	5
 	+	45	0
-	+	67	8
-	+	68	8
-	+	69	16
+	+	69	8
 	+	70	8
-	+	71	1
+	+	71	16
 	+	72	8
+	+	73	1
+	+	74	8
 	+	63	9
 	+	51	43
 	+	60	42
 	+	46	34
 	+	55	35
-	+	64	33
+	+	66	33
 	+	16	14
 	+	24	28
 	+	51	29
 	+	60	29
-	+	69	22
+	+	71	22
 	+	12	17
 	+	20	17
 	+	27	17
 	+	47	17
 	+	56	17
-	+	65	17
+	+	67	17
 	+	35	15
-	+	10	1
+	+	10	47
 	+	11	0
-	+	10	14
+	+	10	60
 	+	35	46
-	+	90	9
-	+	78	26
-	+	80	10
-	+	93	0
-	+	78	19
+	+	91	9
+	+	79	26
+	+	81	10
+	+	94	0
+	+	79	19
 	+	5	5
 	+	35	39
-	+	78	25
+	+	79	25
 	+	4	36
-	+	9	2
+	+	10	2
 	+	4	42
+	+	10	46
+	+	10	0
+	+	75	0
+	+	9	3
+	+	65	12
+	+	64	20
+	+	9	8
+	+	65	9
+	+	9	1
+	+	4	40
+	+	12	12
+	+	14	13
+	+	20	12
+	+	22	20
+	+	27	12
+	+	29	20
+	+	36	12
+	+	38	13
+	+	40	14
+
+> ~/ipc.c
+	"	71	8
+	^	71	9
+	.	71	9
+	+	1	42
+	+	1	26
+	+	1	529
+	+	71	9
 
 > ~/pthread/sema.c
 	"	1	0
@@ -431,81 +533,6 @@ $
 	^	23	11
 	.	23	10
 	+	23	10
-
-> ~/sum_on_many_thread.c
-	"	49	0
-	^	49	0
-	.	17	7
-	+	16	9
-	+	18	0
-	+	16	2
-	+	18	2
-	+	43	58
-	+	32	20
-	+	42	56
-	+	42	57
-	+	43	1
-	+	47	0
-	+	47	0
-	+	43	2
-	+	44	0
-	+	42	14
-	+	42	79
-	+	32	21
-	+	35	32
-	+	36	26
-	+	38	0
-	+	40	1
-	+	41	1
-	+	42	0
-	+	46	2
-	+	46	1
-	+	47	0
-	+	47	34
-	+	48	0
-	+	35	22
-	+	42	21
-	+	44	8
-	+	46	22
-	+	1	0
-	+	35	30
-	+	5	1
-	+	14	16
-	+	21	17
-	+	9	0
-	+	13	29
-	+	13	92
-	+	13	64
-	+	15	33
-	+	20	23
-	+	34	30
-	+	35	5
-	+	42	49
-	+	47	29
-	+	34	39
-	+	42	52
-	+	47	42
-	+	9	1
-	+	13	73
-	+	21	14
-	+	26	6
-	+	35	2
-	+	37	5
-	+	47	44
-	+	14	0
-	+	15	42
-	+	32	21
-	+	35	1
-	+	37	22
-	+	38	2
-	+	39	32
-	+	44	22
-	+	47	1
-	+	48	2
-	+	49	0
-	+	14	12
-	+	15	5
-	+	17	7
 
 > ~/sum_on_thread.c
 	"	2	0
